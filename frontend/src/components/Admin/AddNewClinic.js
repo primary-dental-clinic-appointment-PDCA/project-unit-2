@@ -1,5 +1,4 @@
 
-import react from "react";
 import { useEffect, useState } from "react";
 import axios from 'axios'
 import './addNewAppointment.css'
@@ -24,10 +23,11 @@ const [selectedTime,setSelectedTime] = useState()
     })
     },[])
       
-
+// /////////ADD NEW APPOINTMENT/////////////////////////////////
 
     const handleClick =()=>{
 
+      alert('you added new appointment')
         axios.post('http://localhost:8080/appointment',{Clinic:selectedClinic , day:selectedDay ,time:selectedTime})
 
 
@@ -39,8 +39,32 @@ const [selectedTime,setSelectedTime] = useState()
           setSelectedDay("")
           setSelectedTime("")
         })}
-    
 
+    ////////DELETE///////////////////////////////////////////////
+        
+    const handelDelete=(id)=>{
+      alert('you deleted a appointment')
+      console.log(id)
+
+      axios.delete(`http://localhost:8080/appointment/${id}`)
+     .then((res)=>{
+  console.log(res.data)
+  setAppointment(res.data)
+
+})}
+/////////EDIT/////////////////
+
+const handelEdit =(id)=>{
+  alert(`you edit a appointment in card ${id}`)
+  console.log(id)
+
+  axios.put(`http://localhost:8080/appointment/${id}`,{Clinic:selectedClinic , day:selectedDay ,time:selectedTime})
+.then((res)=>{
+  setAppointment(res.data)
+})
+}
+
+ 
 
 
     return(
@@ -48,9 +72,7 @@ const [selectedTime,setSelectedTime] = useState()
          
         <div className='addNewAppointment'>
         <h1>add New Appointment</h1>
-
         
-       {/* <input type='text' placeholder='Number of Clinic'/> */}
            <select  name='clinic' className='clinic' 
            onChange={ e=>setSelectedClinic(e.target.value)}>
 
@@ -98,9 +120,6 @@ const [selectedTime,setSelectedTime] = useState()
        <button className='postBTN' onClick={handleClick}>Add</button>
 
 
-
- 
-
         </div>
 
         <div className='container'>
@@ -113,8 +132,11 @@ const [selectedTime,setSelectedTime] = useState()
            <h4>{get.day}</h4>
            <h6>{get.time}</h6>
 
-<button className='Edit'>Edit</button>
-<button className='Delete'>Delete</button>
+<button onClick={()=>handelEdit(get.id)} className='Edit'>Edit</button>
+
+<button onClick={()=>handelDelete(get.id)} className='Delete'>Delete</button>
+         
+        
           </div>
  })}
 

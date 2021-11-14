@@ -22,10 +22,11 @@
      .Edit{
       width: 35%;
      }
+     .ADDbtn{
+      width:50%
+    }
 
  } 
-
-
  /* PC */
  @media screen and (min-width:800px)   {
 
@@ -39,7 +40,7 @@
      .container{
        position:absolute;
        top: 60%;
-       width: 100%;
+       width: 90%;
        display: grid;
        grid-template-columns: 1fr 1fr 1fr 1fr ;
         
@@ -50,9 +51,10 @@
      .Edit{
       width: 20%;
      }
-     
+     .ADDbtn{
+       width:30%
+     }
    }
-
    .addNewAppointment{
      
     background: rgb(65, 141, 146);
@@ -146,6 +148,17 @@
     border-radius: 8px;
     border: rgb(153, 163, 62) solid;
     color: rgb(11, 85, 87);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100%;
+    cursor: pointer;
+  }
+  .ADDbtn{
+    padding: 1ch;
+    background: rgb(5, 92, 80);
+    margin: 1ch;
+    border-radius: 8px;
+    border: rgb(14, 104, 99) solid;
+    color: rgb(165, 235, 238);
     font-family: 'Times New Roman', Times, serif;
     font-size: 100%;
     cursor: pointer;

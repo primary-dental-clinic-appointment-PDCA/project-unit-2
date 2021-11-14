@@ -1,9 +1,8 @@
-import react from "react";
-import {BrowserRouter as Router , Routes ,Route,Link} from 'react-router-dom'
+  import {BrowserRouter as Router , Routes ,Route,Link} from 'react-router-dom'
 
 import './Admin.css'
  
- import AdminHome from "./adminHome";
+ 
 
 
 export default function loginAdmin(){
@@ -22,10 +21,11 @@ export default function loginAdmin(){
     <input type='password' placeholder='Enter your password' />
     
     <div className='button'> 
-        <Link to='/components/Admin/adminHome'>Login</Link></div>
-
+    
+         
        </div>
       
+     </div>
      </div>
         </>
     )
