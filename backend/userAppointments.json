@@ -7,8 +7,8 @@
     }
     ,{
         "id":2,
-        "Clinic":"Clinic 1",
-        "day":"Sunday",
-        "time":"9:00 AM"
+        "Clinic":"Clinic 2",
+        "day":"Monday",
+        "time":"10:00 AM"
     }
 ]
