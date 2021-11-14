@@ -1,0 +1,91 @@
+
+
+/* Tablet */
+ @media screen and ( min-width: 600px ) {
+     
+     .homepage{
+
+       position:absolute;
+       top: 1ch;
+       margin-left: 30%;
+       
+     }
+      
+  } 
+
+
+  /* PC */
+  @media screen and (min-width:800px)   {
+
+    .homepage{
+      position: absolute;
+      top: 10%;
+      margin-left: 20%;
+         
+      }
+      
+    }
+    
+
+
+    body{
+
+       background: url('https://images.thequint.com/thequint%2F2021-06%2F89343c8a-184f-440f-877a-eef6c2d6a776%2Fimgonline_com_ua_resize_9ukcp0fQkgeBaToq.jpg');
+       
+        background-size:cover ;
+        background-repeat: no-repeat;
+        background-position: center center ;
+        background-attachment: fixed;
+         
+     }
+     ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 170px;
+      overflow: hidden;
+      background-color: #f1f1f1;
+    }
+
+      li a {
+        font-size: 20px;
+        margin-top: 1ch;
+        margin-right: 1ch;
+        display: block;
+        color: rgb(23, 73, 90);
+        text-align: center;
+        padding: 8px 16px;
+        text-decoration: none;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+      }
+      li a:hover {
+         
+        color: rgb(201, 13, 22);
+         
+      
+      }
+.homepage h1{
+     
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    color: rgb(33, 75, 77);
+   
+}
+span{
+    color: rgb(49, 174, 179);
+}
+
+ .button{
+
+background: rgb(151, 212, 212);
+color:wheat;
+ font-size: 1.25rem;
+ padding: 1rem;
+ left: 22px;
+ margin: 2ch;
+ border-radius: 8px;
+ outline: none;
+ cursor: pointer;
+}
+ 
+ 
