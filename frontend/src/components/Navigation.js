@@ -5,8 +5,20 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import NewAppointment from './NewAppointment.js'
 import Home from './Home'
 import MyAppointment from './MyAppointment.js'
+import axios from "axios"
+import { useEffect, useState } from "react"
+
 
 function Navigation() {
+
+    const [clinics, setClinics] = useState([]);
+
+    useEffect(() => {
+        axios.get("http://localhost:3001/patient/appointments").then((res) => {
+          console.log(res.data);
+          setClinics(res.data.Clinic);
+        });
+      }, []);
 
     return (
         <div>

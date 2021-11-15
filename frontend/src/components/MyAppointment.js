@@ -10,6 +10,12 @@ function MyAppointment() {
         }
     })
 
+    function deleteAppoint(ele){
+        alert("successfully deleted")
+        dispatch(deleteAppointment(ele))
+
+    }
+
     return (
 
         <div>
@@ -20,7 +26,7 @@ function MyAppointment() {
                     <h3>{ele.Clinic}</h3>
                      <p>{ele.day}</p>
                      <p>{ele.time}</p>
-                     <button onClick={()=>dispatch(deleteAppointment(ele))}>Delete</button>
+                     <button onClick={()=>{deleteAppoint(ele)}}>Delete</button>
                     </div>
                     ))):(<h1>No Appointment </h1>) }
 
