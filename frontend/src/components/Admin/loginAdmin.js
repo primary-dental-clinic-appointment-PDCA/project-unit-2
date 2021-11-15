@@ -28,7 +28,7 @@ const {authen ,setAuthen} = useContext(UserContext)
      placeholder='Enter your userName'
      name="userName"
      required
-     onChange={(e)=>{setAuthen(e.target.value)}}
+    
      />
 
     <input
@@ -40,14 +40,15 @@ const {authen ,setAuthen} = useContext(UserContext)
     
     <div className='button'> 
     
-        {/* <button type='submit'
+        <button type='submit'
           onClick={(e)=>{setAuthen(true)
           e.preventDefault()}
-      }>
-        {console.log('kkkk')} */}
+      } >
+         
 
-     <Link exact to='/'>Login</Link>
-        {/* </button> */}
+     <Link className='button' exact to='/'>Login</Link>
+
+        </button>
        </div>
       
      </div>

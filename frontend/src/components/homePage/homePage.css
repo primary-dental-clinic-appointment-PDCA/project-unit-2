@@ -1,109 +1,142 @@
-
-
-/* Tablet */
- @media screen and ( min-width: 600px ) {
-     
-     .homepage{
-
-       position:absolute;
-       top: 25ch;
-       margin-left: 5%;
+/* PC */
+   
+  .homepage{
+    position: absolute;
+    top: 30%;
+    margin-left: 7%;
        
-     }
-      
-  } 
-
-
-  /* PC */
-  @media screen and (min-width:800px)   {
-
-    .homepage{
+    }
+    ul {
+      width: 60%;
       position: absolute;
-      top: 30%;
-      margin-left: 7%;
-         
-      }
-      
-    }
+     /* top: 5ch; */
+     list-style-type: none;
+     padding: 0;
+     overflow: hidden;
+  }
+  li {
+    float: left;
     
-
-
-    body{
-
-       /* background: url('https://images.thequint.com/thequint%2F2021-06%2F89343c8a-184f-440f-877a-eef6c2d6a776%2Fimgonline_com_ua_resize_9ukcp0fQkgeBaToq.jpg'); */
-      /* background: url('https://media.istockphoto.com/photos/dental-office-interior-picture-id860066014?k=20&m=860066014&s=170667a&w=0&h=BJOPLPv9gAAIJad9cOW76Y_aYMeu_o7m3Tlfi9VWb9k=');  */
-     /* background: url('https://uploads.prod01.sydney.platformos.com/instances/398/property_uploads/modules/insites_locator/insites_location/location_image/f8099c29-61e0-439a-9790-66083e3e9795/Practice---%2523-General---Banner---001.jpg'); */
-     background-image: url('https://www.nilesfamilydentistry.com/wp-content/uploads/modern_dentistry-1024x677.jpg');
-     background-size:cover ;
+  }
+  li a {
+    font-size: 25px;
+  
+    margin-right: 1ch;
+    display: block;
+    color: rgb(3, 65, 85);
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-family:serif;
+    font-weight: bold;
+      
+  }
+  li a:hover {
      
-      
-    }
-
-     ul {
-      
-      list-style-type: none;
-      margin: 1ch;
-      padding: 0;
-      overflow: hidden;
-       
-    }
-    li {
-      float: left;
-      
-    }
-    .Adminlog{
-      color: blue;
-      font-family: cursive;
-      font-size: 100%;
-      float: right;
-    margin-right: 5ch;
-    margin-top: 2ch;
+    color: rgb(201, 13, 22);
+    font-weight: bolder;
     text-decoration: underline;
-    }
-      li a {
-        font-size: 25px;
-        margin-top: 1ch;
-        margin-right: 1ch;
-        display: block;
-        color: rgb(23, 73, 90);
-        text-align: center;
-        padding: 8px 16px;
-        text-decoration: none;
-        font-family:initial;
-          
-      }
-      li a:hover {
-         
-        color: rgb(201, 13, 22);
-        font-weight: bolder;
-        text-decoration: underline;
-      }
+  }
 
-       
-
-
-.homepage h1{
+  .homepage h1{
      
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 50px;
     color: rgb(33, 75, 77);
    
 }
+
 span{
     color: rgb(49, 174, 179);
 }
 
- .button{
-
-background: rgb(151, 212, 212);
-color:wheat;
- font-size: 1.25rem;
- padding: 1rem;
- left: 22px;
- margin: 2ch;
- border-radius: 8px;
- outline: none;
- cursor: pointer;
-}
+.Adminlog{
+  color: blue;
+  font-family: monospace;
+  font-size: 100%;
+  float: left;
+margin-right: 5ch;
+margin-top: 2ch;
+text-decoration: underline;
  
+}
+.Patientlog{
+  color: rgb(12, 129, 110);
+  font-family: monospace;
+  font-size: 100%;
+  float: left;
+margin-right: 5ch;
+margin-top: 2ch;
+text-decoration: underline;
+ 
+}
+.none{
+  color: brown;
+  font-family: monospace;
+  font-weight: 900;
+  font-size: 100%;
+  float: left;
+  margin-right: 5ch;
+margin-top: 2ch;
+text-decoration: underline;
+}
+
+
+/* Tablet */
+ @media screen and ( min-width: 768px ) and ( max-width: 1023 ) {
+     
+     .homepage{
+
+       position:absolute;
+       top: 25ch;
+       margin-left: 5%; }} 
+
+
+/* Phone */
+  @media screen and ( max-width: 767px ) {
+
+    body{
+
+       /* background: url('https://images.thequint.com/thequint%2F2021-06%2F89343c8a-184f-440f-877a-eef6c2d6a776%2Fimgonline_com_ua_resize_9ukcp0fQkgeBaToq.jpg'); */
+      /* background: url('https://media.istockphoto.com/photos/dental-office-interior-picture-id860066014?k=20&m=860066014&s=170667a&w=0&h=BJOPLPv9gAAIJad9cOW76Y_aYMeu_o7m3Tlfi9VWb9k=');  */
+     /* background: url('https://uploads.prod01.sydney.platformos.com/instances/398/property_uploads/modules/insites_locator/insites_location/location_image/f8099c29-61e0-439a-9790-66083e3e9795/Practice---%2523-General---Banner---001.jpg'); */
+     /* background-image: url('https://www.nilesfamilydentistry.com/wp-content/uploads/modern_dentistry-1024x677.jpg'); */
+    
+      background-image: url('https://www.nilesfamilydentistry.com/wp-content/uploads/modern_dentistry-1024x677.jpg');
+      background-size:cover ;
+      background-repeat: no-repeat;
+      height: fit-content;
+      background-position: center;
+
+
+       
+    }
+    .bg{
+      /* background-image: url('https://www.nilesfamilydentistry.com/wp-content/uploads/modern_dentistry-1024x677.jpg');
+      background-size:cover ;
+      background-repeat: no-repeat;
+      height: 100%;
+      background-position: center; */
+    }
+ 
+
+    
+
+   
+     
+
+.homepage h1{
+
+     
+
+     margin-top:30%;
+
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 40px;
+     color: rgb(33, 75, 77);
+   
+}
+
+ 
+}
  

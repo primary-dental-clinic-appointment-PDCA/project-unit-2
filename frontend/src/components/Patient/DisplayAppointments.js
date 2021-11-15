@@ -37,11 +37,13 @@ export default function Display(){
 
         const ADD=(id,item)=>{
           if(state.Mylist.some(i=>i.id === id)){
-            alert('You are a')
+            alert('You are already added')
           }
+          else{
           alert('Successfully added')
           dispatch(myAppointment(item))
           // navigate('/MyAppointment')
+        }
         }
 
         

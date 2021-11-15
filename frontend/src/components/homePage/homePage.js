@@ -15,17 +15,18 @@ import { UserContext } from './UserContext'
 
 export default function HomePage() {
 
-    const [authen ,setAuthen] = useState('false');
-
+    const [authen ,setAuthen] = useState(false);
+const [authenUser,setAuthenUser] =useState(false)
 
 return(
     <>  
-    <UserContext.Provider value={{authen ,setAuthen}}> 
+    <UserContext.Provider value={{authen ,setAuthen , authenUser,setAuthenUser}}> 
  
   <Router>
-    <nav>
-        
-        <ul>
+      
+  <div className='backgroundTest'>  
+
+    <nav><ul>
 
         <li><Link to='/' exact >Home</Link></li>
         <li><Link to='/Admin/loginAdmin'>Admin</Link></li>
@@ -33,34 +34,36 @@ return(
         
         {(function(){
 
-         if( authen === 'shahad') {
+         if( authen === true) {
 
          console.log('hello')
+
                 return (
-                    <div> 
-             <li className='Adminlog'> Welcom you are Admin </li>
+
+            <div className='Admindiv'>
              <li><Link to='/Admin/AddNewClinic'>Add New Appointment</Link></li>
-            
+             
+             <li className='Adminlog'>Welcom you are Admin</li>
+           
              </div> 
+             
              )}
 
-         else if (authen === 'Fatimh'){
+         else if (authenUser === true){
            
             return (
                 <div> 
-           <li> Welcom you are Patient </li>
+            
             <li><Link to='/Patien/DisplayAppointments'>Appointments</Link></li>
             <li><Link to='/Patien/MyAppointment'>MY Appointments</Link></li> 
-         </div> 
-         )
+            <li className='Patientlog'>Welcom you are Patient</li>
+         </div>   )
                    
                    }
                    else{ 
-                       return <li> you are not Log in</li>
-                }
-
-
-                    })()}
+                       
+                       return  <li className='none'> you are not Log in</li>
+                } })()}
 
              
         </ul>
@@ -79,7 +82,8 @@ return(
     <Route path='/Patien/MyAppointment' element ={<MyAppointment />}/>
     </Routes>
     
-    
+    </div>
+
        </Router>
        </UserContext.Provider>
             </>

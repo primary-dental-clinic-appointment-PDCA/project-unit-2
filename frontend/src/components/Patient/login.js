@@ -6,7 +6,7 @@ import { useContext } from 'react'
 import { UserContext } from '../HomePage/UserContext'
  
 export default function Login() {
-    const {authen ,setAuthen} = useContext(UserContext)
+    const {authenUser ,setAuthenUser} = useContext(UserContext)
 
 
 return(
@@ -21,7 +21,7 @@ return(
          placeholder='Enter your userName'
          name='userName'
          required
-         onChange={(e)=>{setAuthen(e.target.value)}}
+        //  onChange={(e)=>{setAuthen(e.target.value)}}
          />
         <input
          type='password'
@@ -31,13 +31,13 @@ return(
        
        <div className='button'>
            
-           {/* <button type='submit'
-           onClick={(e)=>{setAuthen(true);
+           <button type='submit'
+           onClick={(e)=>{setAuthenUser(true);
         e.preventDefault()
-        }}> */}
+        }}>
          <Link exact to='/'>Login</Link>
 
-           {/* </button> */}
+           </button>
            </div>
         
     </div>
