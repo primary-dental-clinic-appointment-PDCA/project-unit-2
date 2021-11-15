@@ -1,25 +1,26 @@
 import react from "react";
 import { useEffect, useState } from "react";
 import axios from 'axios'
-import {myAppointment} from './Reducer/PatientAppointment'
+ 
 
 import {useSelector,useDispatch} from 'react-redux'
-import store from "../../store";
+import { myAppointment } from "../../Reducer/PatientAppointment";
+
+// import store from './store';
 
 
 
 export default function Display(){
 
     const [appointment ,setAppointment] = useState([])
-
-
+    
     const dispatch = useDispatch()
+
     const state = useSelector((state)=>{
 
     return{
-        Mylist:state.PatientAppointment.patientPage
-    }
-})
+        Mylist:state.PatientAppointment.patientPage,
+    }})
 
     useEffect(()=>{
 
@@ -33,8 +34,10 @@ export default function Display(){
         <>
         
 
-        <div className='container'>
+        <div className='mycontainer'>
    
+   {console.log(state.Mylist)}
+
    {appointment.map((get)=>{
       
       return <div className='card'>
@@ -42,7 +45,10 @@ export default function Display(){
         <h3>{get.Clinic}</h3>
         <h4>{get.day}</h4>
         <h6>{get.time}</h6>
-        <button className='ADDbtn'>Add</button>
+        
+        <button className='ADDbtn'
+        onClick={()=>((dispatch(myAppointment(get))))}
+         >Add</button>
 
 
        </div>

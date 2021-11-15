@@ -22,6 +22,7 @@ const PatientAppointment =(state= initState ,{type,payload})=>{
                 return state
     }
 }
+export default PatientAppointment;
 
 /////////////////////////////
 export const myAppointment=(data)=>{

@@ -1,8 +1,8 @@
 import {createStore , combineReducers} from 'redux'
 
-import PatientReducer from './Reducer/PatientAppointment'
+import PatientAppointment from './Reducer/PatientAppointment'
 
-const reducer = combineReducers({PatientReducer})
+const reducer = combineReducers({PatientAppointment})
 
 const store = createStore(reducer)
 

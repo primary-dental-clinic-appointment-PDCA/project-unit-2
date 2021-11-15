@@ -4,10 +4,11 @@ import './homePage.css'
 
 import Login from '../Patient/login'
 import LoginAdmin from '../Admin/loginAdmin' 
- import Display from '../Patient/DisplayAppointments'
+import Display from '../Patient/DisplayAppointments'
 import AddNewClinic from '../Admin/AddNewClinic'
  import Home from '../../Home'
 import { useState } from 'react'
+import MyAppointment from '../Patient/MyAppointment'
 
 
 
@@ -27,6 +28,7 @@ return(
             
             <li><Link to='/components/Patien/login'>Patient</Link></li>
             <li><Link to='/components/Patien/DisplayAppointments'>Appointments</Link></li>
+            <li><Link to='/components/Patien/MyAppointment'>MY Appointments</Link></li>
         </ul>
     </nav>
  
@@ -40,6 +42,7 @@ return(
     
     <Route path='components/Patien/login' element ={<Login />}/>
     <Route path='components/Patien/DisplayAppointments' element ={<Display />}/>
+    <Route path='components/Patien/MyAppointment' element ={<MyAppointment />}/>
     </Routes>
     
     

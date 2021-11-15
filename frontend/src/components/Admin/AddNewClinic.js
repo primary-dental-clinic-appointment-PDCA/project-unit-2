@@ -35,9 +35,9 @@ const [selectedTime,setSelectedTime] = useState()
           console.log(res.data)
           setAppointment(res.data)
 
-          setSelectedClinic("")
-          setSelectedDay("")
-          setSelectedTime("")
+          // setSelectedClinic("")
+          // setSelectedDay("")
+          // setSelectedTime("")
         })}
 
     ////////DELETE///////////////////////////////////////////////
