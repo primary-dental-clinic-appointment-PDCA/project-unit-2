@@ -26,7 +26,7 @@ export default function NewAppointment() {
     if (state.apList.some(i => i.id === id)) {
       alert("already added");
     } else {
-      alert("successfully added");
+      alert("successfully added","title");
       dispatch(addAppointment(ele));
       navigate("/MyAppointment");
     }
