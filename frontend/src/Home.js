@@ -1,12 +1,41 @@
  
- 
+ import './index.css'
+import {UserContext} from './components/HomePage/UserContext'
+import { useContext } from 'react';
 import './components/HomePage/homePage.css'
- 
+import {BrowserRouter as Router , Routes ,Route,Link} from 'react-router-dom'
+import { useState } from 'react'
+
 export default function Home(){
+    
+   const {authen, setAuthen} = useContext(UserContext);
 
     return(
        <>
        
+
+<div> 
+ 
+       {(function(){
+
+       if(authen === true){
+
+             return (
+                 <div> 
+             {/* <h2> Welcom you are Admin   </h2> */}
+
+          </div>
+          )
+
+          }
+          else if (authen === false){
+
+            // return <h2> You must Login </h2>
+          }
+       })()}
+</div>
+
+
        <div  className='homepage'> 
     
     <h1>Primary  dental <span >clinic</span> <br/>appointment 

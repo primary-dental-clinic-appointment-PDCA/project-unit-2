@@ -126,16 +126,17 @@ const handelEdit =(id)=>{
    
       {appointment.map((get)=>{
          
-         return <div className='card'>
+         return <div className='cards'>
 
           <h3>{get.Clinic}</h3>
            <h4>{get.day}</h4>
            <h6>{get.time}</h6>
 
+         <div>
 <button onClick={()=>handelEdit(get.id)} className='Edit'>Edit</button>
 
 <button onClick={()=>handelDelete(get.id)} className='Delete'>Delete</button>
-         
+         </div>
         
           </div>
  })}
