@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
 import { addAppointment } from "../reducers/appointment";
 import { useNavigate } from "react-router-dom";
+import swal from 'sweetalert'
 
 export default function NewAppointment() {
   const dispatch = useDispatch();
@@ -24,9 +25,10 @@ export default function NewAppointment() {
 
   function ADD(id,ele) {      
     if (state.apList.some(i => i.id === id)) {
-      alert("already added");
+      swal("already added","","warning");
+      
     } else {
-      alert("successfully added","title");
+      swal("successfully added","","success");
       dispatch(addAppointment(ele));
       navigate("/MyAppointment");
     }

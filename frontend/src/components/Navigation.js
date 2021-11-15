@@ -5,8 +5,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import NewAppointment from "./NewAppointment.js";
 import Home from "./Home";
 import MyAppointment from "./MyAppointment.js";
-import axios from "axios";
-import { useEffect, useState } from "react";
 import Clinics from "./Clinics.js";
 
 function Navigation() {

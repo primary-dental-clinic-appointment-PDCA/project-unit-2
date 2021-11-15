@@ -1,5 +1,6 @@
 import { useSelector , useDispatch} from "react-redux";
 import { deleteAppointment } from "../reducers/appointment";
+import swal from 'sweetalert'
 
 function MyAppointment() {
     const dispatch = useDispatch()
@@ -11,7 +12,7 @@ function MyAppointment() {
     })
 
     function deleteAppoint(ele){
-        alert("successfully deleted")
+        swal("successfully deleted","","error")
         dispatch(deleteAppointment(ele))
 
     }
