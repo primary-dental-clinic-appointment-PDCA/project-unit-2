@@ -4,7 +4,7 @@ import './Admin.css'
  import '../../index.css'
 import { useContext } from 'react'
 import { UserContext } from '../HomePage/UserContext'
- 
+import { Button } from 'react-bootstrap';
  
 
 
@@ -38,21 +38,21 @@ const {authen ,setAuthen} = useContext(UserContext)
       required
       />
     
-    <div className='button'> 
+      <Link  exact to='/'>
     
-        <button type='submit'
+        <Button type='submit'
           onClick={(e)=>{setAuthen(true)
-          e.preventDefault()}
-      } >
+          e.preventDefault()}} >
          
+           Log in </Button>
+      
+       </Link>
 
-     <Link className='button' exact to='/'>Login</Link>
-
-        </button>
+       
        </div>
       
      </div>
-     </div>
+      
         </>
     )
 }

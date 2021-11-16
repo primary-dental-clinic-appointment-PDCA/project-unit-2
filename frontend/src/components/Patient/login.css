@@ -26,12 +26,12 @@
     font-size: 1rem;
 }
 
-.Patientlogin > .button{
+.BTN{
 
-    background: #1877f2;
+    /* background: #1877f2; */
     border: 1px solid #1877f2;
-    color: #fff;
-    font-size: 1.25rem;
+    color: rgb(236, 163, 163);
+    /* font-size: 1.25rem; */
     padding: 0.5rem;
     margin: 0.5rem;
     border-radius: 8px;
@@ -109,7 +109,6 @@
      
   .Patientlogin{
 
-     
     top: 50%;
     margin-left: 5%;
     

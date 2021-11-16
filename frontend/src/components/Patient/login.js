@@ -4,7 +4,7 @@ import '../../index.css'
 import './login.css'
 import { useContext } from 'react'
 import { UserContext } from '../HomePage/UserContext'
- 
+import { Button } from 'react-bootstrap';
 export default function Login() {
     const {authenUser ,setAuthenUser} = useContext(UserContext)
 
@@ -18,27 +18,33 @@ return(
      
         <input 
         type='text'
+        required
          placeholder='Enter your userName'
          name='userName'
-         required
-        //  onChange={(e)=>{setAuthen(e.target.value)}}
+          value='taget.value'
+         
          />
         <input
          type='password'
           placeholder='Enter your password' 
           name='password'
+          required
           />
        
-       <div className='button'>
+       {/* <div className='button'> */}
            
-           <button type='submit'
-           onClick={(e)=>{setAuthenUser(true);
-        e.preventDefault()
-        }}>
-         <Link exact to='/'>Login</Link>
+       
+            
+         <Link exact to='/'>
 
-           </button>
-           </div>
+              <Button  type='submit'
+              onClick={(e)=>{ setAuthenUser(true);
+             e.preventDefault() }}>
+               Login </Button></Link> 
+
+               
+            
+           {/* </div> */}
         
     </div>
     
