@@ -2,7 +2,9 @@ import react from "react";
 import { useEffect, useState } from "react";
 import axios from 'axios'
 import './login.css'
-import {useNavigate} from 'react-router-dom'
+import swal from 'sweetalert';
+ 
+// import {useNavigate} from 'react-router-dom'
 import {useSelector,useDispatch} from 'react-redux'
 import { myAppointment } from "../../Reducer/PatientAppointment";
 
@@ -16,7 +18,7 @@ export default function Display(){
     
     const dispatch = useDispatch()
 
-    const navigate=useNavigate()
+    // const navigate=useNavigate()
 
 
     const state = useSelector((state)=>{
@@ -36,11 +38,21 @@ export default function Display(){
 
 
         const ADD=(id,item)=>{
+
           if(state.Mylist.some(i=>i.id === id)){
-            alert('You are already added')
-          }
+
+            swal({
+              title:'You are already added',
+               icon:'error'
+              })}
+
           else{
-          alert('Successfully added')
+             
+            swal( {
+              title:'Successfully added',
+              icon:'success'
+            })
+
           dispatch(myAppointment(item))
           // navigate('/MyAppointment')
         }

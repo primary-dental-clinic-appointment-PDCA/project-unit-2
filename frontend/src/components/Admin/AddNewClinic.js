@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import axios from 'axios'
 import './addNewAppointment.css'
-
+import swal from 'sweetalert';
 export default function AddNewClinic(){
 
 const [appointment ,setAppointment] = useState([])
@@ -27,7 +27,11 @@ const [selectedTime,setSelectedTime] = useState()
 
     const handleClick =()=>{
 
-      alert('you added new appointment')
+       
+      swal({
+        title:'You Added New Appointment',
+        icon:'success'
+      })
         axios.post('http://localhost:8080/appointment',{Clinic:selectedClinic , day:selectedDay ,time:selectedTime})
 
 
@@ -43,7 +47,12 @@ const [selectedTime,setSelectedTime] = useState()
     ////////DELETE///////////////////////////////////////////////
         
     const handelDelete=(id)=>{
-      alert('you deleted a appointment')
+
+       
+      swal({
+        title:'you deleted a appointment',
+        icon:'success'
+      })
       console.log(id)
 
       axios.delete(`http://localhost:8080/appointment/${id}`)
@@ -55,7 +64,12 @@ const [selectedTime,setSelectedTime] = useState()
 /////////EDIT/////////////////
 
 const handelEdit =(id)=>{
-  alert(`you edit a appointment in card ${id}`)
+   
+  swal({
+    title:`you edit a appointment in card ${id}`,
+    icon:'success'
+  })
+  
   console.log(id)
 
   axios.put(`http://localhost:8080/appointment/${id}`,{Clinic:selectedClinic , day:selectedDay ,time:selectedTime})

@@ -2,6 +2,7 @@ import React from "react";
 import './login.css'
 import { useDispatch ,useSelector } from "react-redux";
 import { remove } from "../../Reducer/PatientAppointment";
+import swal from 'sweetalert';
 
 import {useNavigate} from 'react-router-dom'
 
@@ -13,12 +14,18 @@ export default function MyAppointment(){
 
     const state = useSelector((state)=>{
        return{ 
+           
            myList:state.PatientAppointment.patientPage,
         }
     })
 
     const Remove=(item)=>{
 
+         
+        swal({
+            title:'The Appointment is delete',
+            icon:"error"
+        })
         dispatch(remove(item))
     }
 

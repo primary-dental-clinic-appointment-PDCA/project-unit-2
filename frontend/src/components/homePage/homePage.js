@@ -16,7 +16,7 @@ import { UserContext } from './UserContext'
 export default function HomePage() {
 
     const [authen ,setAuthen] = useState(false);
-const [authenUser,setAuthenUser] =useState(false)
+    const [authenUser,setAuthenUser] =useState(false)
 
 return(
     <>  
@@ -42,9 +42,10 @@ return(
 
             <div className='Admindiv'>
              <li><Link to='/Admin/AddNewClinic'>Add New Appointment</Link></li>
-             
-             <li className='Adminlog'>Welcom you are Admin</li>
-           
+            
+             <div className='Adminlog'> 
+             <p  >Loged in as Admin</p>
+             </div>
              </div> 
              
              )}
@@ -56,7 +57,10 @@ return(
             
             <li><Link to='/Patien/DisplayAppointments'>Appointments</Link></li>
             <li><Link to='/Patien/MyAppointment'>MY Appointments</Link></li> 
-            <li className='Patientlog'>Welcom you are Patient</li>
+           
+            <div className='Patientlog'> 
+            <li  >Loged as Patient</li>
+            </div>
          </div>   )
                    
                    }
