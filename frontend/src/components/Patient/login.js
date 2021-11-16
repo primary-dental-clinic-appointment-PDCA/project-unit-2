@@ -3,7 +3,7 @@ import {BrowserRouter as Router , Routes ,Route,Link} from 'react-router-dom'
 import '../../index.css'
 import './login.css'
 import { useContext } from 'react'
-import { UserContext } from '../HomePage/UserContext'
+import { UserContext } from '../Home/UserContext'
 import { Button } from 'react-bootstrap';
 export default function Login() {
     const {authenUser ,setAuthenUser} = useContext(UserContext)

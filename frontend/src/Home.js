@@ -1,8 +1,8 @@
  
  import './index.css'
-import {UserContext} from './components/HomePage/UserContext'
+import {UserContext} from './components/Home/UserContext'
 import { useContext } from 'react';
-import './components/HomePage/homePage.css'
+import './components/Home/homePage.css'
 import {BrowserRouter as Router , Routes ,Route,Link} from 'react-router-dom'
 import { useState } from 'react'
 

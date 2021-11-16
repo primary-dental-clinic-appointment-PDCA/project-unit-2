@@ -1,9 +1,9 @@
 
 
 import './App.css';
-import HomePage from './components/HomePage/HomePage';
+import HomePage from './components/Home/HomePage';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import background from './components/HomePage/image/login.jpg'
+import background from './components/Home/image/login.jpg'
 function App() {
 
   return (

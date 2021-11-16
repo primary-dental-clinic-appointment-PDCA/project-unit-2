@@ -3,7 +3,7 @@
 import './Admin.css'
  import '../../index.css'
 import { useContext } from 'react'
-import { UserContext } from '../HomePage/UserContext'
+import { UserContext } from '../Home/UserContext'
 import { Button } from 'react-bootstrap';
  
 
