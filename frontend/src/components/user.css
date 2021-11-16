@@ -1,0 +1,48 @@
+body{
+    background-color: white;
+}
+
+button{
+ background-color: white; 
+  color: black; 
+  border: 2px solid #2889A4;
+  border-radius: 20px;
+}
+
+button:hover {
+    background-color: #2889a4a8;
+    color: white;
+  }
+
+.navbarr{
+    background-color: #3dacca;
+    text-decoration:none;
+    color: white;
+}
+
+.appointmentCard{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    }
+
+.innerCard{
+   display: flex;
+   flex-direction: column;
+   background-color: #9fd2e0;
+   margin: 10px;
+   padding: 10px;
+   height: 200px;
+   width: 200px;
+   border-radius: 5px;
+   color: white;
+}
+
+.link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nothing{
+    text-align: center;
+}

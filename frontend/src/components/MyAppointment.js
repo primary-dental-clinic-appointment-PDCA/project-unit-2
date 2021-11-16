@@ -19,17 +19,17 @@ function MyAppointment() {
 
     return (
 
-        <div>
+        <div className="appointmentCard">
 
             {state.apList.length ? (
                 state.apList?.map((ele, key) =>(
-                    <div key={key}>
+                    <div key={key} className="innerCard">
                     <h3>{ele.Clinic}</h3>
                      <p>{ele.day}</p>
                      <p>{ele.time}</p>
                      <button onClick={()=>{deleteAppoint(ele)}}>Delete</button>
                     </div>
-                    ))):(<h1>No Appointment </h1>) }
+                    ))):(<h3 className="nothing">No Appointment </h3>) }
 
         </div>
     )

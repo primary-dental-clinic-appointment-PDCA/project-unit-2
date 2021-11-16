@@ -11,19 +11,20 @@ function Navigation() {
   return (
     <div>
       <BrowserRouter>
+      <div className="navbarr">
         <Navbar>
           <Container>
             <Navbar.Brand>
-              <Link to="/Home">Homepage</Link>
+              <Link className="link" to="/Home">Homepage</Link>
             </Navbar.Brand>
             <Navbar.Brand>
-              <Link to="/NewAppointment">New Appointment</Link>
+              <Link className="link" to="/NewAppointment">New Appointment</Link>
             </Navbar.Brand>
             <Navbar.Brand>
-              <Link to="/MyAppointment">My Appointment</Link>
+              <Link className="link" to="/MyAppointment">My Appointment</Link>
             </Navbar.Brand>
             <Navbar.Brand>
-              <Link to="/Clinics/clinic1">Clinics</Link>
+              <Link className="link" to="/Clinics/clinic1">Clinics</Link>
             </Navbar.Brand>
             <Navbar.Toggle />
             <Navbar.Collapse className="justify-content-end">
@@ -33,7 +34,7 @@ function Navigation() {
             </Navbar.Collapse>
           </Container>
         </Navbar>
-
+</div>
         <Routes>
           <Route exact path="/Home" element={<Home />} />
           <Route path="/NewAppointment" element={<NewAppointment />} />

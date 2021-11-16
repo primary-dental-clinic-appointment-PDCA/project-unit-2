@@ -5,6 +5,7 @@ import axios from "axios";
 import { addAppointment } from "../reducers/appointment";
 import { useNavigate } from "react-router-dom";
 import swal from 'sweetalert'
+import './user.css'
 
 export default function NewAppointment() {
   const dispatch = useDispatch();
@@ -34,10 +35,10 @@ export default function NewAppointment() {
     }
   }
   return (
-    <div>
+    <div className="appointmentCard">
       {appointment.map((ele) => {
         return (
-          <div>
+          <div className="innerCard">
             <h3>{ele.Clinic}</h3>
             <p>{ele.day}</p>
             <p>{ele.time}</p>
