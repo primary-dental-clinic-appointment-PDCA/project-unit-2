@@ -34,7 +34,9 @@ app.post('/appointment',(req,res)=>{
         id:appointment.length + 1 ,
         Clinic:req.body.Clinic,
         day:req.body.day,
-        time:req.body.time
+        time:req.body.time,
+        doctorName:req.body.time,
+        floor:req.body.floor
     }
 
     appointment.push(newAppointment)

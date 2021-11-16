@@ -21,6 +21,7 @@
       color: rgb(10, 114, 114);
        font-family: 'Times New Roman', Times, serif;
      }
+
      .container{
        position:absolute;
        top: 70%;
@@ -31,11 +32,10 @@
        row-gap:4ch ;
 
        margin-right: 3ch;
-       /*        
-             position: absolute; */
-             margin-bottom: 2ch;
-             top: 90%;
-             text-align: center;
+       
+      margin-bottom: 2ch;
+      top: 90%;
+     text-align: center;
 
      }
      .cards{
@@ -131,14 +131,14 @@
       font-size: 150%;
       font-weight: bold;
     }
-     .mycontainer{
+     /* .mycontainer{
      position:absolute ;
      top: 20%;
      width: 80%;
        display: grid;
        grid-template-columns: 1fr 1fr 1fr 1fr ;
         margin-left: 10%;
-    }
+    } */
     .clinic{
       width: 250px;
       padding: 1ch;
@@ -214,7 +214,7 @@
     width:50%;
     
   }
-  .mycontainer{
+  /* .mycontainer{
     position:absolute ;
     top: 20%;
     width: 90%;
@@ -222,7 +222,7 @@
       grid-template-columns: 1fr 1fr ;
        margin-left: 5%;
        row-gap: 15px;
-   }
+   } */
 
 }
 /* Phone */

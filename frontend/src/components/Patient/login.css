@@ -38,22 +38,21 @@
     outline: none;
     cursor: pointer;
 }
-
- 
-
  .myCard{
   margin-bottom: 2ch;
    padding: 1ch;
    top: 3ch;
  }
-   .myBigcontainer{
+   .BIGcontainer{
+
       position:absolute ;
       top: 30%;
       width: 80%;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr ;
-       margin-left: 10%;
+       margin-left: 9%;
        row-gap: 15px;
+       text-align: center;
    }
    .myCard{
    
@@ -93,10 +92,10 @@
 
 /* Tablet */
 
-@media screen and ( min-width: 768px ) and ( max-width: 1023 ) {
+@media screen and ( min-width: 768px ) and ( max-width: 1023px ) {
      
-   
-  .myBigcontainer{
+  .BIGcontainer{
+     
        margin-left: 10%;
        row-gap: 15px;
        display: grid;
@@ -113,7 +112,7 @@
     margin-left: 5%;
     
   }
-  .myBigcontainer{
+  .BIGcontainer{
     top :40%;
     display: grid;
     grid-template-columns: 1fr ;
@@ -127,14 +126,6 @@
    .Delete{
      width: 28%;
    }
-    
- 
-  
- 
-  
-
- 
- 
  
 .Delete{
   padding: 1ch;

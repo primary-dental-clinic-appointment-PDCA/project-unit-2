@@ -61,10 +61,9 @@ export default function Display(){
         
     return(
         <>
-        <div className='myBigcontainer'>
-   
-   {console.log(state.Mylist)}
 
+        <div className='BIGcontainer'>
+   
    {appointment.map((get)=>{
       
       return <div className='myCard'>
