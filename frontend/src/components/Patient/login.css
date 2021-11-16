@@ -45,11 +45,11 @@
  }
    .BIGcontainer{
 
-      position:absolute ;
-      top: 30%;
+      position:absolute;
+      top: 40%;
       width: 80%;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr ;
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr 1fr ;
        margin-left: 9%;
        row-gap: 15px;
        text-align: center;

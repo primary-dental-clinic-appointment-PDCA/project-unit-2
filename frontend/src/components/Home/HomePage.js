@@ -10,6 +10,7 @@ import AddNewClinic from '../Admin/AddNewClinic'
  import { useState } from 'react'
 import MyAppointment from '../Patient/MyAppointment'
 import { UserContext } from './UserContext'
+import Clinics from '../Clinics';
 
 
 
@@ -29,7 +30,7 @@ return(
     <nav><ul>
 
         <li><Link to='/' exact >Home</Link></li>
-        <li><Link to='/Admin/loginAdmin'>Admin</Link></li>
+        <li><Link to='/Admin/LoginAdmin'>Admin</Link></li>
         <li><Link to='/Patien/Login'>Patient</Link></li>
         
         {(function(){
@@ -41,7 +42,8 @@ return(
                 return (
 
             <div className='Admindiv'>
-             <li><Link to='/Admin/AddNewClinic'>Add New Appointment</Link></li>
+            <li><Link to='/Admin/AddNewClinic'>Add New Appointment</Link></li>
+            <li><Link to='/Clinics/clinic1'>Clinics</Link></li>
             
              <div className='Adminlog'> 
              <p  >Loged in as Admin</p>
@@ -80,6 +82,8 @@ return(
     
     <Route path='/Admin/LoginAdmin'element={<LoginAdmin />}/>
      <Route path='/Admin/AddNewClinic'  element={<AddNewClinic/>}/>
+    
+    <Route path='/Clinics/:clinic'element={<Clinics/>}/>
     
     <Route path='/Patien/Login' element ={<Login />}/>
     <Route path='/Patien/DisplayAppointments' element ={<Display />}/>

@@ -4,7 +4,7 @@ import axios from 'axios'
 import './login.css'
 import swal from 'sweetalert';
  
-// import {useNavigate} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
 import {useSelector,useDispatch} from 'react-redux'
 import { myAppointment } from "../../Reducer/PatientAppointment";
 
@@ -18,7 +18,7 @@ export default function Display(){
     
     const dispatch = useDispatch()
 
-    // const navigate=useNavigate()
+    const navigate=useNavigate()
 
 
     const state = useSelector((state)=>{
@@ -54,7 +54,7 @@ export default function Display(){
             })
 
           dispatch(myAppointment(item))
-          // navigate('/MyAppointment')
+           navigate('/MyAppointment');
         }
         }
 

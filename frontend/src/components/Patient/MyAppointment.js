@@ -33,7 +33,7 @@ export default function MyAppointment(){
     return(
         <>
 
-        <div className="myBigcontainer"> 
+        <div className="BIGcontainer"> 
 
         {state.myList.map((elm)=>(
 
