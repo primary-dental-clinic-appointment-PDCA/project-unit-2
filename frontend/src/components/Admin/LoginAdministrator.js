@@ -1,17 +1,52 @@
   import {BrowserRouter as Router , Routes ,Route,Link} from 'react-router-dom'
-
 import './Admin.css'
- import '../../index.css'
-import { useContext } from 'react'
+import { useContext, useState } from 'react'
 import { UserContext } from '../Home/UserContext'
 import { Button } from 'react-bootstrap';
  
-
+import { useNavigate } from 'react-router-dom';
 
 export default function LoginAdmin(){
 
 const {authen ,setAuthen} = useContext(UserContext)
+ let navigate=useNavigate();
 
+ const [name ,setName] =useState('');
+ const [pass ,setPass] =useState(''); 
+
+
+
+//  Check if input in name and password is null
+
+
+const onChangeHandler =(fieldName ,value)=>{
+  if(fieldName==='name'){
+    setName(value)
+  }
+
+  else if(fieldName ==='pass'){
+    setPass(value)
+  }
+}
+
+const onSubmitHandler = (e)=>{
+  e.preventDefault();
+
+
+  if(name.trim() === '' || pass.trim() ===''){
+
+    alert("required both field");
+  }
+  else
+  {
+        // alert(name)
+        setAuthen(true)
+
+        navigate('/')
+        setName('')
+        setPass('')
+}
+}
 
     return(
 
@@ -19,38 +54,53 @@ const {authen ,setAuthen} = useContext(UserContext)
  
         <div className='BigLogin'> 
 
-        <div className='login'>
+        <form className='login' onSubmit={(e)=>{onSubmitHandler(e)}}>
     
     <h1>Login for Admin </h1>
 
     <input
      type='text'
-     placeholder='Enter your userName'
-     name="userName"
+      placeholder='Enter your userName'
+    //  name="userName"
+     value={name}
+     onChange={(e)=>{onChangeHandler('name',e.target.value)}}
      required
-    
      />
 
     <input
-     type='password'
+      type='password'
       placeholder='Enter your password'
-      name='password'
+      // name='password'
+      value={pass}
+      onChange={(e)=>{onChangeHandler('pass',e.target.value)}}
+    
       required
       />
     
        
     
-        <p
-         type='submit'
-          onClick={(e)=>{setAuthen(true)
-          e.preventDefault()}} >
-         <Link  exact to='/'>
-           Log in  
+{/* { function(){
+
+      if(value !== '') */}
+
+      {/* { return( */}
       
-       </Link>
-       </p>
+          
+          
+             <input type='submit' onClick={onSubmitHandler}/> 
+         
+      {/* )
+      
+          
+      }
+}()} */}
+         
+         
+        
        
-       </div>
+          
+       
+       </form>
       
      </div>
       
