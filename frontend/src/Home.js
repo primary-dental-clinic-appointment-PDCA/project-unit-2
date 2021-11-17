@@ -5,6 +5,7 @@ import { useContext } from 'react';
 import './components/Home/homePage.css'
 import {BrowserRouter as Router , Routes ,Route,Link} from 'react-router-dom'
 import { useState } from 'react'
+ 
 
 export default function Home(){
     
@@ -14,27 +15,7 @@ export default function Home(){
        <>
        
 
-<div> 
  
-       {(function(){
-
-       if(authen === true){
-
-             return (
-                 <div> 
-             {/* <h2> Welcom you are Admin   </h2> */}
-
-          </div>
-          )
-
-          }
-          else if (authen === false){
-
-            // return <h2> You must Login </h2>
-          }
-       })()}
-</div>
-
 
        <div  className='homepage'> 
     

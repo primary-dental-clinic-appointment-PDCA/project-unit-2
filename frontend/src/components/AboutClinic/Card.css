@@ -1,0 +1,75 @@
+
+/* .hero2{
+    border-bottom: black solid;
+   
+} */
+/* .card{
+     padding: 2ch;
+     
+} */
+
+.BIG{
+    border: solid rgba(0, 0, 0, 0);
+}
+
+.con {
+     
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    margin-top: 15ch;
+     margin-bottom: 2ch;
+     border-radius: 16px;
+}
+ 
+.child {
+    border: rgb(12, 134, 138) solid;
+    border-radius:8px ;
+    /* padding: 4ch; */
+    margin: 10ch;
+    padding: 3ch;
+    text-align: center;
+    background: rgba(95, 158, 160, 0.342);
+}
+ 
+ .child >h1{
+     color: rgb(3, 75, 64);
+     font-family:cursive;
+ }
+ .children{
+     margin-top: 15ch;
+     margin-bottom: 2ch;
+     border-radius: 16px;  
+     /* margin-left: 1%; */
+     margin-right: 40%;
+     
+}
+.fullCard{
+
+    border: rgba(12, 134, 138, 0.774) solid;
+    border-radius:8px ;
+    padding: 3ch;
+    margin: 5ch;
+    padding: 8ch;
+    background: rgba(24, 147, 151, 0.356); 
+}
+ 
+ 
+
+.fullCard >h1{
+    font-size: xx-large;
+
+    color: rgb(31, 100, 90);
+    font-family:cursive;
+}
+.fullCard > h1 > span{
+    color: rgb(2, 34, 30);
+
+}
+ .full{
+
+     border: darkblue solid;
+ }
+ 
+ Link{
+     color: black;
+ }

@@ -38,16 +38,17 @@ const {authen ,setAuthen} = useContext(UserContext)
       required
       />
     
-      <Link  exact to='/'>
+       
     
-        <Button type='submit'
+        <p
+         type='submit'
           onClick={(e)=>{setAuthen(true)
           e.preventDefault()}} >
-         
-           Log in </Button>
+         <Link  exact to='/'>
+           Log in  
       
        </Link>
-
+       </p>
        
        </div>
       

@@ -22,7 +22,7 @@ background: url('https://uploads.prod01.sydney.platformos.com/instances/398/prop
   .homepage{
     position: absolute;
     top: 30%;
-    margin-left: 7%;
+    margin-left: 10%;
        
     }
     ul {
@@ -58,15 +58,14 @@ background: url('https://uploads.prod01.sydney.platformos.com/instances/398/prop
   }
 
   .homepage h1{
-     
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 50px;
     color: rgb(33, 75, 77);
    
 }
 
 span{
-    color: rgb(49, 174, 179);
+    color: rgb(29, 162, 167);
 }
 
  .Adminlog{
@@ -90,8 +89,6 @@ span{
   position: absolute;
   left: 80%;
   top: 30%;
-/* margin-right: 5ch; */
-/* margin-top: 2ch; */
 text-decoration: underline;
  
 }
@@ -109,6 +106,7 @@ margin-top: 2ch;
 text-decoration: underline;
 }
 
+ 
 
 /* Tablet */
  @media screen and ( min-width: 768px ) and ( max-width: 1023 ) {
@@ -116,7 +114,7 @@ text-decoration: underline;
      .homepage{
 
        position:absolute;
-       top: 25ch;
+       top: 20ch;
        margin-left: 5%; }
       
         
@@ -153,7 +151,9 @@ top: 25%;
 
 }
   
-     
+     .homepage{
+      top: 5ch;
+     }
 
 .homepage h1{
 

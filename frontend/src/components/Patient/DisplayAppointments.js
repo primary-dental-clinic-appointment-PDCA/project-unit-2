@@ -24,7 +24,9 @@ export default function Display(){
     const state = useSelector((state)=>{
 
     return{
+
         Mylist:state.PatientAppointment.patientPage,
+        
     }})
 
     useEffect(()=>{

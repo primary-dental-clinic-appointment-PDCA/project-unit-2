@@ -31,20 +31,23 @@ return(
           required
           />
        
-       {/* <div className='button'> */}
+       
            
        
             
-         <Link exact to='/'>
+         
 
-              <Button  type='submit'
-              onClick={(e)=>{ setAuthenUser(true);
+              <p   
+              type='submit'onClick={(e)=>{ setAuthenUser(true);
              e.preventDefault() }}>
-               Login </Button></Link> 
+              
+              <Link exact to='/'>Login</Link>
+            
+               </p>
 
                
             
-           {/* </div> */}
+           
         
     </div>
     
