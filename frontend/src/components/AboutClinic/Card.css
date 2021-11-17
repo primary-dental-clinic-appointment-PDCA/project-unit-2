@@ -14,21 +14,20 @@
 
 .con {
      
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    margin-top: 15ch;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr ;
+     margin-top: 10ch;
      margin-bottom: 2ch;
      border-radius: 16px;
 }
  
 .child {
-    border: rgb(12, 134, 138) solid;
+    border: rgb(11, 114, 117) solid;
     border-radius:8px ;
-    /* padding: 4ch; */
-    margin: 10ch;
+    margin: 5ch;
     padding: 3ch;
     text-align: center;
-    background: rgba(95, 158, 160, 0.342);
+    background: rgba(212, 230, 231, 0.644);
 }
  
  .child >h1{
@@ -39,22 +38,19 @@
      margin-top: 15ch;
      margin-bottom: 2ch;
      border-radius: 16px;  
-     /* margin-left: 1%; */
      margin-right: 40%;
      
 }
 .fullCard{
 
-    border: rgba(12, 134, 138, 0.774) solid;
+    border: rgba(9, 112, 116, 0.774) solid;
     border-radius:8px ;
     padding: 3ch;
     margin: 5ch;
     padding: 8ch;
-    background: rgba(24, 147, 151, 0.356); 
+    background: rgba(162, 214, 216, 0.61); 
 }
  
- 
-
 .fullCard >h1{
     font-size: xx-large;
 
@@ -67,9 +63,50 @@
 }
  .full{
 
-     border: darkblue solid;
+     border: rgba(0, 100, 139, 0.116) solid;
  }
  
- Link{
-     color: black;
- }
+  
+
+ @media screen and ( min-width: 768px ) and ( max-width: 1023px ) {
+ 
+    .con {
+     
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+         
+    }
+
+     
+
+    .children{
+        
+        margin-top: 15ch;
+        margin-right: 3%;
+    }
+}
+
+@media screen and ( max-width: 767px ) {
+
+    .con {
+     
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 10ch;
+        margin-right: 10ch;
+         
+    }
+    .children{
+        
+        margin-top: 20ch;
+        margin-right: 0%;
+        margin-left: 0;
+    }
+
+    .fullCard >h1{
+        font-size:medium;
+    
+        color: rgb(31, 100, 90);
+        font-family:cursive;
+    }
+}

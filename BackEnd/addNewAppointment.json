@@ -11,5 +11,19 @@
     "day": "Monday",
     "time": "9:00 AM",
     "doctorName": "9:00 AM"
+  },
+  {
+    "id": 3,
+    "Clinic": "Clinic 1",
+    "day": "Sunday",
+    "time": "9:00 AM",
+    "doctorName": "9:00 AM"
+  },
+  {
+    "id": 4,
+    "Clinic": "Clinic 2",
+    "day": "Monday",
+    "time": "1:00 PM",
+    "doctorName": "1:00 PM"
   }
 ]
