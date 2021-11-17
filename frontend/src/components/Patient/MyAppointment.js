@@ -1,33 +1,34 @@
 import { useSelector , useDispatch} from "react-redux";
-import { deleteAppointment } from "../reducers/appointment";
+import { remove } from "../../Reducers/PatientAppointment";
 import swal from 'sweetalert'
+import './login.css'
 
 function MyAppointment() {
     const dispatch = useDispatch()
 
     const state = useSelector((state) =>{
         return{
-            apList: state.appointment.list
+            Mylist:state.PatientAppointment.patientPage
         }
     })
 
     function deleteAppoint(ele){
         swal("successfully deleted","","error")
-        dispatch(deleteAppointment(ele))
+        dispatch(remove(ele))
 
     }
 
     return (
 
-        <div className="appointmentCard">
+        <div className="myBigcontainer">
 
-            {state.apList.length ? (
-                state.apList?.map((ele, key) =>(
-                    <div key={key} className="innerCard">
+            {state.Mylist.length ? (
+                state.Mylist?.map((ele, key) =>(
+                    <div key={key} className="myCard">
                     <h3>{ele.Clinic}</h3>
                      <p>{ele.day}</p>
                      <p>{ele.time}</p>
-                     <button onClick={()=>{deleteAppoint(ele)}}>Delete</button>
+                     <button onClick={()=>{deleteAppoint(ele)}} className='Delete' >Delete</button>
                     </div>
                     ))):(<h3 className="nothing">No Appointment </h3>) }
 

@@ -1,48 +1,47 @@
-body{
-    background-color: white;
+.appointmentCard {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
 }
 
-button{
- background-color: white; 
-  color: black; 
-  border: 2px solid #2889A4;
-  border-radius: 20px;
-}
-
-button:hover {
-    background-color: #2889a4a8;
-    color: white;
-  }
-
-.navbarr{
-    background-color: #3dacca;
-    text-decoration:none;
-    color: white;
-}
-
-.appointmentCard{
-    display: flex;
-    flex-direction: row;
-    margin: 20px;
-    }
-
-.innerCard{
-   display: flex;
-   flex-direction: column;
-   background-color: #9fd2e0;
-   margin: 10px;
-   padding: 10px;
-   height: 200px;
-   width: 200px;
-   border-radius: 5px;
-   color: white;
+.innerCard {
+  display: flex;
+  flex-direction: column;
+  background-color: #9fd2e0;
+  margin: 10px;
+  padding: 10px;
+  height: 200px;
+  width: 200px;
+  border-radius: 5px;
+  color: white;
 }
 
 .link {
-    color: #fff;
-    text-decoration: none;
+  color: rgb(3, 65, 85);
+  text-decoration: none;
 }
 
-.nothing{
-    text-align: center;
+.nothing {
+  text-align: center;
+}
+
+.card_c {
+  /* position: absolute; */
+  border: rgba(9, 112, 116, 0.774) solid;
+  border-radius: 8px;
+  padding: 3ch;
+  margin: 10ch;
+  margin-left: 40ch;
+  padding: 8ch;
+  background: rgba(162, 214, 216, 0.849);
+  font-family: monospace;
+  height: 30vh;
+  width: 50vw;
+}
+
+.card_c h3 {
+  color: rgb(9, 112, 116);
+}
+.card_c h3 span {
+  color: white;
 }

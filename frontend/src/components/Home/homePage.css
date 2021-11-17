@@ -1,0 +1,125 @@
+/* PC */
+
+body{
+  background: url("https://uploads.prod01.sydney.platformos.com/instances/398/property_uploads/modules/insites_locator/insites_location/location_image/f8099c29-61e0-439a-9790-66083e3e9795/Practice---%2523-General---Banner---001.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  backface-visibility: hidden;
+}
+
+/* body::after{
+  opacity: 0.5;
+} */
+.homepage {
+  position: absolute;
+  top: 30%;
+  margin-left: 10%;
+}
+ul {
+  width: 98%;
+  /* position: absolute; */
+  list-style-type: none;
+  overflow: hidden;
+}
+li {
+  float: left;
+}
+
+li a {
+  font-size: 25px;
+  display: block;
+  color: rgb(3, 65, 85);
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-family: serif;
+  font-weight: bold;
+}
+li a:hover {
+  color: rgb(201, 13, 22);
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.homepage h1{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ font-size: 60px;
+ color: #053c9b;
+ background-color: #f6f7f89f;
+ 
+}
+.Home {
+ color: rgb(29, 162, 167);
+ background-color: cornsilk;
+}
+
+
+.Adminlog {
+  color: blue;
+  font-family: monospace;
+  font-size: 100%;
+  float: right;
+  position: absolute;
+  left: 77%;
+  top: 5%;
+  margin-top: 2ch;
+  text-decoration: underline;
+}
+.Patientlog {
+  color: rgb(12, 129, 110);
+  font-family: monospace;
+  font-size: 100%;
+  float: right;
+  position: absolute;
+  left: 80%;
+  top: 30%;
+  text-decoration: underline;
+}
+.none {
+  color: brown;
+  font-family: monospace;
+  font-weight: 900;
+  font-size: 100%;
+  float: left;
+  position: absolute;
+  left: 70%;
+
+  margin-right: 5ch;
+  margin-top: 2ch;
+  text-decoration: underline;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023) {
+  .homepage {
+    position: absolute;
+    top: 25ch;
+    margin-left: 5%;
+  }
+}
+
+/* Phone */
+@media screen and (max-width: 767px) {
+ 
+
+  ul {
+    height: 20%;
+  }
+
+  li a {
+    padding: 1ch;
+  }
+
+  .Adminlog {
+    position: absolute;
+    top: 25%;
+  }
+
+  .homepage h1 {
+    margin-top: 30%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    color: rgb(33, 75, 77);
+  }
+}

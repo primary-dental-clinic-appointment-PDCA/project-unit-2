@@ -1,0 +1,20 @@
+[
+  {
+    "id": 7,
+    "Clinic": "Clinic 1",
+    "day": "Sunday",
+    "time": "9:00 AM"
+  },
+  {
+    "id": 2,
+    "Clinic": "Clinic 2",
+    "day": "Monday",
+    "time": "10:00 AM"
+  },
+  {
+    "id": 3,
+    "Clinic": "Clinic 5",
+    "day": "Thursday",
+    "time": "2:00 PM"
+  }
+]

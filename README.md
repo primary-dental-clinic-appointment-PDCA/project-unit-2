@@ -3,14 +3,14 @@
 
  ## Functionalities in the website: 
  1. Admin functionality:
-1. Add new appointment to appointment list
-2. Delete and updte appointment  
+ Add new appointment to appointment list
+ Delete and updte appointment  
 
  2. User functionality:
-1. Add new appointment to user appointment list
-2. Delete appointment from user appointment list
+ Add new appointment to user appointment list
+ Delete appointment from user appointment list
 
- 3. Show list of clinics in map
+ Show list of clinics in map
 
 ## Tools used:
 1. Bootstrap :CSS for styling navbar.
@@ -21,9 +21,9 @@
 6. Mapbox: To show clinis in map.
 
 ## Problem encountered:
-1. 
+1. adding new appointment .
 2. changing file name in VS then push it into Github the file name dosen't change .
-3. 
+
 
 ## Links:
 1. link of Trello board =>https://trello.com/b/MvABRosK/project-unit02

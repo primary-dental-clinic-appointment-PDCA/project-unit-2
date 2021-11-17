@@ -1,0 +1,364 @@
+
+ /* PC */
+ 
+   .addNewAppointment{
+
+     width: 450px;
+     position: absolute;
+     top: 20%;
+     margin-left: 35%;
+     background: #627aa1c9;
+     /* border: 1px solid #dddfe2; */
+     border-radius: 8px;
+     padding: 2rem;
+     align-items: center;
+     text-align: center;
+     border: none;
+       
+     }
+     .addNewAppointment > h1{
+      color:#0d2650;
+       font-family: 'Times New Roman', Times, serif;
+     }
+     .container{
+       position:absolute;
+       top: 70%;
+       width: 90%;
+       left: 7%;
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr 1fr ;
+       row-gap:4ch ;
+       margin-right: 3ch;
+       margin-bottom: 2ch;
+       top: 90%;
+       text-align: center;
+     }
+
+     .cards{
+      row-gap:8px ;
+      padding: 2ch;
+      margin-bottom: 2ch;
+       width: 90%;
+       height: 100%;
+       border: none;
+      margin-left: 3ch; 
+      text-align: center;
+      border-radius: 8px;
+      background: #627aa1c9;
+     }
+     .Edit{
+      width: 30%;
+      padding: 1ch;
+      background: #0d2650;
+      margin: 1ch;
+      border-radius: 8px;
+      border:none;
+      color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100%;
+    font-weight: bolder;
+    cursor: pointer;
+     }
+
+     .ADDbtn{
+      border:none;
+       width:40%;
+       padding: 1ch;
+       background: rgb(5, 92, 80);
+       margin: 1ch;
+       border-radius: 8px;
+       color: rgb(165, 235, 238);
+       font-family: 'Times New Roman', Times, serif;
+       font-size: 100%;
+       cursor: pointer;
+     }
+     .postBTN{
+      margin: 1ch;
+      border-radius: 5px;
+      border:none;
+      width: 25%;
+      height:40px;
+      color: white;
+      font-family:'Times New Roman', Times, serif;
+      background: #0d2650;
+      cursor: pointer;
+      font-weight: bolder;
+      font-size: 120%;
+  }
+     .Delete{
+       width: 30%;
+       padding: 1ch;
+       background:#0d2650;
+       margin: 1ch;
+       border-radius: 8px;
+       border:none; 
+       color: white;
+       font-family: 'Times New Roman', Times, serif;
+       font-size: 100%;
+       cursor: pointer;
+       font-weight: bolder;
+     }
+
+     .Delete:hover{
+       background-color: red;
+     }
+
+     .cards >h3{
+      padding-top: 2ch ;
+       color: #ffffff;
+       font-family: 'Times New Roman', Times, serif;
+       font-size: 200%;
+  
+     }
+     .cards >h4{
+  
+      color:  #ffffff;
+       
+      font-family: 'Times New Roman', Times, serif;
+       
+      font-size: 160%;
+    }
+    .cards >h6{
+      color:  #ffffff;
+      font-family: 'Times New Roman', Times, serif;
+       
+      font-size: 150%;
+      font-weight: bold;
+    }
+     .mycontainer{
+     position:absolute ;
+     top: 20%;
+     width: 80%;
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr 1fr ;
+        margin-left: 10%;
+    }
+    .clinic{
+      width: 250px;
+      padding: 1ch;
+      border-radius: 8px;
+      font-family:monospace;
+      color: rgb(5, 96, 124);
+      margin: 1ch;
+  }
+  .day{
+   width: 250px;
+   padding: 1ch;
+   border-radius: 8px;
+   font-family:monospace;
+   color: rgb(5, 96, 124); 
+   margin: 1ch;
+  }
+  .time{
+   width: 250px;
+   padding: 1ch;
+   border-radius: 8px;
+   font-family:monospace;
+   color: rgb(5, 96, 124); 
+   margin: 1ch; 
+  }
+
+   
+/* Tablet */
+@media screen and ( min-width: 768px ) and ( max-width: 1023px ) {
+     
+  .addNewAppointment{
+
+    width: 500px;
+    /* position:absolute; */
+    top: 10%;
+    right: 18%;
+    padding: 2ch;
+    background: rgba(137, 230, 230, 0.199);
+    border: 1px solid #dddfe2;
+    border-radius: 8px;
+    padding: 2rem;
+    align-items: center;
+    text-align: center;
+    border: solid rgb(10, 114, 114);
+  
+  }
+  .container{
+  
+    top: 75%; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+      
+  }
+   .cards{
+    margin-bottom: 2ch;
+     padding: 1ch;
+     top: 3ch;
+    
+     width: 90%;
+     height: 100%;
+    border:rgb(13, 46, 46) solid;
+    margin-left: 3ch;
+     
+    text-align: center;
+    border-radius: 8px;
+    background: rgba(133, 243, 243, 0.5);
+   }
+   
+   .Edit{
+    width: 25%;
+   }
+   .ADDbtn{
+
+    width:50%;
+    
+  }
+  .mycontainer{
+    position:absolute ;
+    top: 20%;
+    width: 90%;
+      display: grid;
+      grid-template-columns: 1fr 1fr ;
+       margin-left: 5%;
+       row-gap: 15px;
+   }
+
+}
+/* Phone */
+@media screen and ( max-width: 767px ) {
+
+   .addNewAppointment{
+     
+    /* background: rgba(137, 230, 230, 0.199);
+    border: 1px solid #dddfe2;
+    border-radius: 8px;
+    padding: 2rem;
+    align-items: center;
+    text-align: center;
+    border: solid rgb(10, 114, 114); */
+    right: 20%;
+    top: 40%;
+    width: 60%;
+     
+   }
+   .addNewAppointment > h1{
+    /* color: rgb(10, 114, 114);
+     font-family: 'Times New Roman', Times, serif; */
+   }
+   .clinic{
+       width: 120px;
+       /* padding: 1ch;
+       border-radius: 8px;
+       font-family:monospace;
+       color: rgb(5, 96, 124);
+       margin: 1ch; */
+   }
+   .day{
+    width: 120px;
+    /* padding: 1ch;
+    border-radius: 8px;
+    font-family:monospace;
+    color: rgb(5, 96, 124); 
+    margin: 1ch; */
+   }
+   .time{
+    width: 120px;
+    /* padding: 1ch;
+    border-radius: 8px;
+    font-family:monospace;
+    color: rgb(5, 96, 124); 
+    margin: 1ch;  */
+   }
+   .postBTN{
+    width: 25%;
+       /* margin: 1ch;
+       border-radius: 8px;
+       border-color: rgb(4, 73, 82);
+       padding: 1ch;
+       width: 20%;
+       color: rgb(7, 65, 65);
+       font-family:'Times New Roman', Times, serif;
+       background: rgb(183, 225, 226);
+       cursor: pointer;
+       font-weight: bolder;
+       font-size: 120%; */
+   }
+
+   .container{
+      margin-right: 3ch;
+ 
+      margin-bottom: 2ch;
+      top: 110%;
+      text-align: center;
+      display: grid;
+      grid-template-columns: 1fr;
+      left: 14%;
+      text-align: center;
+   }
+    
+   .cards{
+     
+    
+     width: 60%;
+     height: 100%;
+    border:rgb(13, 46, 46) solid;
+    margin-left: 3ch;
+    text-align: center;
+    border-radius: 8px;
+    background: rgba(133, 243, 243, 0.5);
+
+   }
+   .cards >h3{
+    padding-top: 2ch ;
+     color: rgb(7, 58, 58);
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 200%;
+
+   }
+   .cards >h4{
+
+    color:  rgba(10, 71, 71, 0.966);
+     
+    font-family: 'Times New Roman', Times, serif;
+     
+    font-size: 160%;
+  }
+  .cards >h6{
+    color:  rgb(8, 12, 12);
+    font-family: 'Times New Roman', Times, serif;
+     
+    font-size: 150%;
+    font-weight: bold;
+  }
+  .Edit{
+    
+     padding: 1ch;
+    background: rgb(6, 133, 105);
+    margin: 1ch;
+    border-radius: 8px;
+    /* border: rgb(153, 163, 62) solid; */
+    color: rgb(3, 23, 24);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100%;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+  .ADDbtn{
+    padding: 1ch;
+    background: rgb(5, 92, 80);
+    margin: 1ch;
+    border-radius: 8px;
+     
+    color: rgb(165, 235, 238);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100%;
+    cursor: pointer;
+  }
+  .Delete{
+    padding: 1ch;
+    background: rgb(209, 72, 54);
+    margin: 1ch;
+    border-radius: 8px;
+    /* border: rgb(235, 89, 31)solid; */
+    color: rgb(9, 32, 32);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100%;
+    cursor: pointer;
+    font-weight: bolder;
+  }
+}

@@ -1,0 +1,150 @@
+
+ /* PC */
+
+.Patientlogin{
+    position: absolute;
+    top: 35%;
+    margin-left: 10%;
+    width: 450px;
+    background:  rgb(236, 246, 247);
+    border: 1px solid #dddfe2;
+    box-shadow: 0 2px 4px rgb(0 0 0 /10%) ,0 8px 16px rgb(0 0 0 /10%);
+    border-radius: 8px;
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+}
+
+.Patientlogin > input{
+    border-radius: 8px;
+    border: 2px solid #dddfe2;
+    outline: none;
+    color: #1d2129;
+    margin: 0.5rem 0;
+    padding: 0.5rem 0.75rem;
+    width: 92%;
+    font-size: 1rem;
+}
+
+.BTN{
+
+    /* background: #1877f2; */
+    border: 1px solid #1877f2;
+    color: rgb(236, 163, 163);
+    /* font-size: 1.25rem; */
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+}
+
+ 
+
+ .myCard{
+  margin-bottom: 2ch;
+   padding: 1ch;
+   top: 3ch;
+ }
+   .myBigcontainer{
+      position:absolute ;
+      top: 30%;
+      width: 80%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr ;
+       margin-left: 10%;
+       row-gap: 15px;
+   }
+   .myCard{
+   
+    width: 90%;
+    height: 100%;
+   border:rgb(13, 46, 46) solid;
+   margin-left: 3ch;
+   text-align: center;
+   border-radius: 8px;
+   background: rgba(159, 219, 219, 0.5);
+ 
+  }
+  .myCard >h3{
+    padding-top: 2ch ;
+     color: rgb(7, 58, 58);
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 200%;
+  
+   }
+   .myCard >h4{
+  
+    color:  rgba(10, 71, 71, 0.966);
+     
+    font-family: 'Times New Roman', Times, serif;
+     
+    font-size: 160%;
+  }
+  .myCard >h6{
+    color:  rgb(8, 12, 12);
+    font-family: 'Times New Roman', Times, serif;
+     
+    font-size: 150%;
+    font-weight: bold;
+  }
+ 
+/* ///////////////// */
+
+/* Tablet */
+
+@media screen and ( min-width: 768px ) and ( max-width: 1023 ) {
+     
+   
+  .myBigcontainer{
+       margin-left: 10%;
+       row-gap: 15px;
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+   }
+   
+} 
+/* Phone */
+@media screen and ( max-width: 767px ){
+     
+  .Patientlogin{
+
+    top: 50%;
+    margin-left: 5%;
+    
+  }
+  .myBigcontainer{
+    top :40%;
+    display: grid;
+    grid-template-columns: 1fr ;
+     margin-left: 10%;
+     row-gap: 15px;
+ }
+} 
+ 
+ 
+   
+   .Delete{
+     width: 28%;
+   }
+    
+ 
+  
+ 
+  
+
+ 
+ 
+ 
+.Delete{
+  padding: 1ch;
+  background: rgb(209, 72, 54);
+  margin: 1ch;
+  border-radius: 8px;
+  /* border: rgb(235, 89, 31)solid; */
+  color: rgb(9, 32, 32);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 100%;
+  cursor: pointer;
+  font-weight: bolder;
+}
