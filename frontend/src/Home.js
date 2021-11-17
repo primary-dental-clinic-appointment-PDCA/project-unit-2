@@ -19,7 +19,7 @@ export default function Home(){
 
        <div  className='homepage'> 
     
-    <h1>Primary  dental <span >clinic</span> <br/>appointment 
+    <h1 className='H1'>Primary  dental <span>clinic</span> <br/>appointment 
     <br/> <span>(PDCA)</span> </h1> 
    
     </div><br/>

@@ -61,11 +61,12 @@ background: url('https://uploads.prod01.sydney.platformos.com/instances/398/prop
      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 50px;
     color: rgb(33, 75, 77);
-   
+    
 }
 
 span{
     color: rgb(29, 162, 167);
+    background-color: cornsilk;
 }
 
  .Adminlog{

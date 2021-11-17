@@ -6,6 +6,7 @@ import swal from 'sweetalert';
  
 import {useNavigate} from 'react-router-dom'
 import {useSelector,useDispatch} from 'react-redux'
+
 import { myAppointment } from "../../Reducer/PatientAppointment";
 
 // import store from './store';
@@ -56,7 +57,7 @@ export default function Display(){
             })
 
           dispatch(myAppointment(item))
-           navigate('/MyAppointment');
+           navigate('/Patien/MyAppointment');
         }
         }
 

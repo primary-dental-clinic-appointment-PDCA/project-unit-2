@@ -3,12 +3,13 @@ import './Admin.css'
 import { useContext, useState } from 'react'
 import { UserContext } from '../Home/UserContext'
 import { Button } from 'react-bootstrap';
- 
+import swal from 'sweetalert';
 import { useNavigate } from 'react-router-dom';
 
 export default function LoginAdmin(){
 
 const {authen ,setAuthen} = useContext(UserContext)
+
  let navigate=useNavigate();
 
  const [name ,setName] =useState('');
@@ -17,8 +18,6 @@ const {authen ,setAuthen} = useContext(UserContext)
 
 
 //  Check if input in name and password is null
-
-
 const onChangeHandler =(fieldName ,value)=>{
   if(fieldName==='name'){
     setName(value)
@@ -35,11 +34,17 @@ const onSubmitHandler = (e)=>{
 
   if(name.trim() === '' || pass.trim() ===''){
 
-    alert("required both field");
+    swal({
+      title: "required both field",
+    
+    })
   }
   else
   {
-        // alert(name)
+    swal({
+      title:'Welcome '+ name,
+    
+    })
         setAuthen(true)
 
         navigate('/')
@@ -61,7 +66,7 @@ const onSubmitHandler = (e)=>{
     <input
      type='text'
       placeholder='Enter your userName'
-    //  name="userName"
+     
      value={name}
      onChange={(e)=>{onChangeHandler('name',e.target.value)}}
      required
@@ -70,7 +75,7 @@ const onSubmitHandler = (e)=>{
     <input
       type='password'
       placeholder='Enter your password'
-      // name='password'
+       
       value={pass}
       onChange={(e)=>{onChangeHandler('pass',e.target.value)}}
     
@@ -79,22 +84,12 @@ const onSubmitHandler = (e)=>{
     
        
     
-{/* { function(){
-
-      if(value !== '') */}
-
-      {/* { return( */}
+ 
       
           
           
              <input type='submit' onClick={onSubmitHandler}/> 
-         
-      {/* )
-      
-          
-      }
-}()} */}
-         
+       
          
         
        
