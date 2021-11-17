@@ -19,8 +19,8 @@ export default function Home(){
 
        <div  className='homepage'> 
     
-    <h1 className='H1'>Primary  dental <span>clinic</span> <br/>appointment 
-    <br/> <span>(PDCA)</span> </h1> 
+    <h1 className='H1'>Primary  dental <span className='Home'>clinic</span> <br/>appointment 
+    <br/> <span className='Home'>(PDCA)</span> </h1> 
    
     </div><br/>
        </>

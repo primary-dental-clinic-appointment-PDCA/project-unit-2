@@ -21,8 +21,8 @@ export default function HomePage() {
     const info =[
         { 
             clinic:'Clinic 1',
-            doctrName:'Fahad Saleh',
-           floor:'Second Floor'
+             doctrName:'Fahad Saleh',
+             floor:'Second Floor'
         },
         { 
             clinic:'Clinic 2',

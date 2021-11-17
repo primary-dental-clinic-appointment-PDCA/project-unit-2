@@ -64,7 +64,7 @@ background: url('https://uploads.prod01.sydney.platformos.com/instances/398/prop
     
 }
 
-span{
+.Home {
     color: rgb(29, 162, 167);
     background-color: cornsilk;
 }

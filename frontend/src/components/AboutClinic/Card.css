@@ -13,7 +13,6 @@
 }
 
 .con {
-     
      display: grid;
      grid-template-columns: 1fr 1fr 1fr ;
      margin-top: 10ch;
@@ -58,6 +57,7 @@
     font-family:cursive;
 }
 .fullCard > h1 > span{
+    
     color: rgb(2, 34, 30);
 
 }

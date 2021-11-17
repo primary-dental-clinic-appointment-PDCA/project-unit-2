@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import {BrowserRouter as Router , Routes ,Route,Link} from 'react-router-dom'
-import '../../index.css'
+ 
 import './login.css'
 import { useContext } from 'react'
 import { UserContext } from '../Home/UserContext'
@@ -49,7 +49,7 @@ const onChangeHandler =(fieldName ,value)=>{
       setAuthenUser(true)
   
           navigate('/')
-          
+
           setName('')
           setPass('')
   }
@@ -61,7 +61,9 @@ return(
      
 
      
-    <form className='Patientlogin' onSubmit={(e)=>{onSubmitHandler(e)}}>
+    <form className='Patientlogin' 
+    onSubmit={(e)=>{onSubmitHandler(e)}}>
+      
     <h1>Login page  for Patient</h1>
 
      
@@ -87,7 +89,7 @@ return(
             
          
 
-       <input type='submit' onClick={onSubmitHandler}/> 
+       <input  className='Submit' type='submit' onClick={onSubmitHandler}/> 
                
             
            
