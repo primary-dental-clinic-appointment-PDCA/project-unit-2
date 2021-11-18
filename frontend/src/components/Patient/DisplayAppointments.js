@@ -27,7 +27,7 @@ export default function Display(){
 
     useEffect(()=>{
 
-        axios.get('http://localhost:3001/admin/appointment')
+        axios.get('admin/appointment')
         .then((res)=>{
           console.log(res.data)
           setAppointment(res.data)

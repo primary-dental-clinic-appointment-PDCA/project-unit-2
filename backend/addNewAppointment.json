@@ -1,8 +1,32 @@
 [
   {
     "id": 1,
+    "Clinic": "Clinic 3",
+    "day": "Tuseday",
+    "time": "2:00 PM"
+  },
+  {
+    "id": 2,
     "Clinic": "Clinic 1",
     "day": "Sunday",
-    "time": "8:00 AM"
+    "time": "9:00 AM"
+  },
+  {
+    "id": 4,
+    "Clinic": "Clinic 1",
+    "day": "Sunday",
+    "time": "11:00 AM"
+  },
+  {
+    "id": 5,
+    "Clinic": "Clinic 1",
+    "day": "Sunday",
+    "time": "2:00 PM"
+  },
+  {
+    "id": 6,
+    "Clinic": "Clinic 2",
+    "day": "Monday",
+    "time": "10:00 AM"
   }
 ]

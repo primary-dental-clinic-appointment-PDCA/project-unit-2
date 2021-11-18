@@ -1,0 +1,24 @@
+{
+  "name": "unit-2-project",
+  "version": "1.0.0",
+  "description": "Our project is a dental appointment website that you can login as admin or user, each one has its different functionality. Admin can add appointments for the user and modify them if it's needed, user can add appointments and delete it, also there is clinics map so you can see them.",
+  "main": "backend/server.js",
+  "engines":{
+    "node": "14.x"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon backend/server.js",
+    "build": "cd frontend; npm i; npm run build; cd ../backend; npm i"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/primary-dental-clinic-appointment-PDCA/project-unit-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/primary-dental-clinic-appointment-PDCA/project-unit-2/issues"
+  },
+  "homepage": "https://github.com/primary-dental-clinic-appointment-PDCA/project-unit-2#readme"
+}

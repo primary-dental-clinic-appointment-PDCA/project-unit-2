@@ -14,7 +14,7 @@ export default function AddNewClinic(){
     
     
           useEffect(() => {
-            axios.get("http://localhost:3001/admin/appointment").then((res) => {
+            axios.get("admin/appointment").then((res) => {
               console.log(res.data);
               console.log("GET")
               setAppointment(res.data);
@@ -30,7 +30,7 @@ export default function AddNewClinic(){
             title:'New appointment added',
             icon:'success'
           })
-            axios.post('http://localhost:3001/admin/appointment',{Clinic:selectedClinic , day:selectedDay ,time:selectedTime})
+            axios.post('admin/appointment',{Clinic:selectedClinic , day:selectedDay ,time:selectedTime})
     
     
             .then((res)=>{
@@ -53,7 +53,7 @@ export default function AddNewClinic(){
           })
           console.log(id)
     
-          axios.delete(`http://localhost:3001/admin/appointment/${id}`)
+          axios.delete(`admin/appointment/${id}`)
          .then((res)=>{
       console.log("DELETE")
       setAppointment(res.data)
@@ -70,7 +70,7 @@ export default function AddNewClinic(){
       
       console.log(id)
     
-      axios.put(`http://localhost:3001/admin/appointment/${id}`,{Clinic:selectedClinic , day:selectedDay ,time:selectedTime})
+      axios.put(`admin/appointment/${id}`,{Clinic:selectedClinic , day:selectedDay ,time:selectedTime})
     .then((res)=>{
       setAppointment(res.data)
     })
