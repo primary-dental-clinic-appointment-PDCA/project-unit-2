@@ -8,17 +8,20 @@ body{
   backface-visibility: hidden;
 }
 
-/* body::after{
-  opacity: 0.5;
-} */
+ 
 .homepage {
   position: absolute;
   top: 30%;
   margin-left: 10%;
+  background-color: #f6f7f89f;
 }
+.H{
+  color: rgb(80, 182, 185);
+}
+
 ul {
   width: 98%;
-  /* position: absolute; */
+   
   list-style-type: none;
   overflow: hidden;
 }
@@ -45,14 +48,11 @@ li a:hover {
 .homepage h1{
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
  font-size: 60px;
- color: #053c9b;
- background-color: #f6f7f89f;
+ color: rgb(33, 75, 77);
+ /* background-color: #f6f7f89f; */
  
 }
-.Home {
- color: rgb(29, 162, 167);
- background-color: cornsilk;
-}
+/*   */
 
 
 .Adminlog {
@@ -92,11 +92,7 @@ li a:hover {
 
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 1023) {
-  .homepage {
-    position: absolute;
-    top: 25ch;
-    margin-left: 5%;
-  }
+   
 }
 
 /* Phone */
@@ -116,10 +112,5 @@ li a:hover {
     top: 25%;
   }
 
-  .homepage h1 {
-    margin-top: 30%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 40px;
-    color: rgb(33, 75, 77);
-  }
+   
 }

@@ -37,7 +37,7 @@ export default function Clinics({data}) {
                 longitude={viewport.longitude}
                 latitude={viewport.latitude}
                 offsetTop={-20}
-                offsetLeft={-10}
+                offsetLeft={-30}
             >
                 <FaAmbulance />
             </Marker>

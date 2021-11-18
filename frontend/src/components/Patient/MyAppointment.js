@@ -13,7 +13,7 @@ function MyAppointment() {
     })
 
     function deleteAppoint(ele){
-        swal("successfully deleted","","error")
+        swal("Apointment deleted","","error")
         dispatch(remove(ele))
 
     }
@@ -26,8 +26,8 @@ function MyAppointment() {
                 state.Mylist?.map((ele, key) =>(
                     <div key={key} className="myCard">
                     <h3>{ele.Clinic}</h3>
-                     <p>{ele.day}</p>
-                     <p>{ele.time}</p>
+                     <h3>{ele.day}</h3>
+                     <h6>{ele.time}</h6>
                      <button onClick={()=>{deleteAppoint(ele)}} className='Delete' >Delete</button>
                     </div>
                     ))):(<h3 className="nothing">No Appointment </h3>) }

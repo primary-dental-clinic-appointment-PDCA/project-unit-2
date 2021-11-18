@@ -10,15 +10,15 @@
  Add new appointment to user appointment list
  Delete appointment from user appointment list
 
- Show list of clinics in map
+ 3. Show list of clinics in map
 
 ## Tools used:
-1. Bootstrap :CSS for styling navbar.
+1. Mapbox: To show clinis in map.
 2. Trello: Project management tool to orgnize the time and work.
 3. Figma: For wireframing.
 4. JavaScript: To add Functionalities to my project.
 5. Sweetalert: CSS for styling alert .
-6. Mapbox: To show clinis in map.
+
 
 ## Problem encountered:
 1. adding new appointment .
@@ -26,6 +26,6 @@
 
 
 ## Links:
-1. link of Trello board =>https://trello.com/b/MvABRosK/project-unit02
-2. Also if you want to check my project I upload it and here is the link for you =>
-3. link of figma =>
+1. link of Trello board =>https://trello.com/b/MvABRosK/project-unit02  
+2. link of figma =>
+3. Also if you want to check my project I upload it and here is the link for you =>https://github.com/primary-dental-clinic-appointment-PDCA/project-unit-2.git

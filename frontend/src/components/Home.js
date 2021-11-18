@@ -12,31 +12,20 @@
         <>
         
  
- <div> 
-  
-        {(function(){
  
-        if(authen === true){
- 
-              return (
-                  <div> 
-              {/* <h2> Welcom you are Admin   </h2> */}
- 
-           </div>
-           )
- 
-           }
-           else if (authen === false){
- 
-             // return <h2> You must Login </h2>
-           }
-        })()}
- </div>
  
  
  <div  className='homepage'>
-    <h1>Primary dental clinic <br/>appointment (PDCA)</h1>
+
+    <h1> Primary
+     dental  <span className='H'> <br/>clinic </span> 
+
+     appointment  <span className='H'> <br/>(PDCA)</span></h1>
+
     </div>
+
+          
+        
         </>
      )
  }

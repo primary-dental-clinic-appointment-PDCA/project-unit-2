@@ -26,22 +26,35 @@
 }
 
 .card_c {
-  /* position: absolute; */
-  border: rgba(9, 112, 116, 0.774) solid;
+
   border-radius: 8px;
-  padding: 3ch;
-  margin: 10ch;
-  margin-left: 40ch;
+  margin-left: 30%;
+  margin-top: 5%;
   padding: 8ch;
-  background: rgba(162, 214, 216, 0.849);
+  background: #627aa1c9;
   font-family: monospace;
-  height: 30vh;
-  width: 50vw;
+  height: 30%;
+  width: 40%;
 }
 
 .card_c h3 {
-  color: rgb(9, 112, 116);
+  color: white;
 }
 .card_c h3 span {
   color: white;
+}
+
+@media screen and ( min-width: 768px ) and ( max-width: 1023px ) {
+  .card_c{
+   
+    width: 50%;
+  }
+}
+
+@media screen and ( max-width: 767px ){
+  .card_c{
+   
+    width: 60%;
+    margin-left: 10%;
+  }
 }

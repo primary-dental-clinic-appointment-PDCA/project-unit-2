@@ -39,14 +39,7 @@
     cursor: pointer;
 }
 
- 
-
- .myCard{
-  margin-bottom: 2ch;
-   padding: 1ch;
-   top: 3ch;
- }
-   .myBigcontainer{
+ .myBigcontainer{
       position:absolute ;
       top: 30%;
       width: 80%;
@@ -56,33 +49,32 @@
        row-gap: 15px;
    }
    .myCard{
-   
+    top: 3ch;
+    padding: 1ch;
+    border: none;
     width: 90%;
     height: 100%;
-   border:rgb(13, 46, 46) solid;
    margin-left: 3ch;
+   margin-bottom: 2ch;
    text-align: center;
    border-radius: 8px;
-   background: rgba(159, 219, 219, 0.5);
- 
+   background:#627aa1c9;
+   color: white;
   }
   .myCard >h3{
     padding-top: 2ch ;
-     color: rgb(7, 58, 58);
+     color:white;
      font-family: 'Times New Roman', Times, serif;
      font-size: 200%;
   
    }
    .myCard >h4{
-  
-    color:  rgba(10, 71, 71, 0.966);
-     
+    color:white;
     font-family: 'Times New Roman', Times, serif;
-     
     font-size: 160%;
   }
   .myCard >h6{
-    color:  rgb(8, 12, 12);
+    color:white;
     font-family: 'Times New Roman', Times, serif;
      
     font-size: 150%;
@@ -93,10 +85,11 @@
 
 /* Tablet */
 
-@media screen and ( min-width: 768px ) and ( max-width: 1023 ) {
+@media screen and ( min-width: 768px ) and ( max-width: 1023px ) {
      
    
   .myBigcontainer{
+    width: 100%;
        margin-left: 10%;
        row-gap: 15px;
        display: grid;
@@ -122,27 +115,12 @@
  }
 } 
  
- 
-   
-   .Delete{
-     width: 28%;
-   }
-    
- 
-  
- 
-  
-
- 
- 
- 
 .Delete{
+  width: 28%;
   padding: 1ch;
-  background: rgb(209, 72, 54);
   margin: 1ch;
   border-radius: 8px;
   /* border: rgb(235, 89, 31)solid; */
-  color: rgb(9, 32, 32);
   font-family: 'Times New Roman', Times, serif;
   font-size: 100%;
   cursor: pointer;

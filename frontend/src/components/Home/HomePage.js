@@ -21,7 +21,7 @@ export default function HomePage() {
   const Building=[
     {
       clinic_num: "clinic 1",
-      doctor: "mohammed",
+      doctor: "Fahad Bin Sweleh",
       building: 1,
       floor:"first floor"
     },

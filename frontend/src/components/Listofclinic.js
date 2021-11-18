@@ -11,9 +11,10 @@ export default function Listofclinic({data}) {
              .map((clinic) => (
 
           <div className="card_c">
+          <h3>Dr.<span>{clinic.doctor}</span></h3>
 
           <h3>Clinic Number:<span>{clinic.clinic_num}.</span> </h3>
-          <h3>Doctor Name :<span>{clinic.doctor}.</span></h3>
+          
           <h3>Floor Number:<span>{clinic.floor}.</span></h3>
 
           </div>  

@@ -59,15 +59,18 @@
     font-weight: bolder;
     cursor: pointer;
      }
-
+.Edit:hover{
+  background-color:white;
+  color: blue;
+}
      .ADDbtn{
       border:none;
        width:40%;
        padding: 1ch;
-       background: rgb(5, 92, 80);
+       background: #0d2650;
        margin: 1ch;
        border-radius: 8px;
-       color: rgb(165, 235, 238);
+       color:white;
        font-family: 'Times New Roman', Times, serif;
        font-size: 100%;
        cursor: pointer;
@@ -169,13 +172,13 @@
     top: 10%;
     right: 18%;
     padding: 2ch;
-    background: rgba(137, 230, 230, 0.199);
+    /* background: rgba(137, 230, 230, 0.199); */
     border: 1px solid #dddfe2;
     border-radius: 8px;
     padding: 2rem;
     align-items: center;
     text-align: center;
-    border: solid rgb(10, 114, 114);
+    /* border: solid rgb(10, 114, 114); */
   
   }
   .container{
@@ -192,12 +195,12 @@
     
      width: 90%;
      height: 100%;
-    border:rgb(13, 46, 46) solid;
+    /* border:rgb(13, 46, 46) solid; */
     margin-left: 3ch;
      
     text-align: center;
     border-radius: 8px;
-    background: rgba(133, 243, 243, 0.5);
+    /* background: rgba(133, 243, 243, 0.5); */
    }
    
    .Edit{
@@ -224,59 +227,29 @@
 
    .addNewAppointment{
      
-    /* background: rgba(137, 230, 230, 0.199);
-    border: 1px solid #dddfe2;
-    border-radius: 8px;
-    padding: 2rem;
-    align-items: center;
-    text-align: center;
-    border: solid rgb(10, 114, 114); */
-    right: 20%;
+    
+    /* right: 20%; */
     top: 40%;
-    width: 60%;
+    width: 80%;
+    margin: 4ch;
      
    }
-   .addNewAppointment > h1{
-    /* color: rgb(10, 114, 114);
-     font-family: 'Times New Roman', Times, serif; */
-   }
+   
    .clinic{
-       width: 120px;
-       /* padding: 1ch;
-       border-radius: 8px;
-       font-family:monospace;
-       color: rgb(5, 96, 124);
-       margin: 1ch; */
+       width: 100%;
+       
    }
    .day{
-    width: 120px;
-    /* padding: 1ch;
-    border-radius: 8px;
-    font-family:monospace;
-    color: rgb(5, 96, 124); 
-    margin: 1ch; */
+    width: 100%;
+     
    }
    .time{
-    width: 120px;
-    /* padding: 1ch;
-    border-radius: 8px;
-    font-family:monospace;
-    color: rgb(5, 96, 124); 
-    margin: 1ch;  */
+    width: 100%;
+     
    }
    .postBTN{
-    width: 25%;
-       /* margin: 1ch;
-       border-radius: 8px;
-       border-color: rgb(4, 73, 82);
-       padding: 1ch;
-       width: 20%;
-       color: rgb(7, 65, 65);
-       font-family:'Times New Roman', Times, serif;
-       background: rgb(183, 225, 226);
-       cursor: pointer;
-       font-weight: bolder;
-       font-size: 120%; */
+    width: 35%;
+        
    }
 
    .container{
@@ -284,61 +257,56 @@
  
       margin-bottom: 2ch;
       top: 110%;
-      text-align: center;
+
+      /* text-align: center; */
       display: grid;
       grid-template-columns: 1fr;
-      left: 14%;
-      text-align: center;
+      /* left: 14%;
+      text-align: center; */
    }
     
    .cards{
      
     
-     width: 60%;
+     width: 70%;
      height: 100%;
-    border:rgb(13, 46, 46) solid;
-    margin-left: 3ch;
-    text-align: center;
-    border-radius: 8px;
-    background: rgba(133, 243, 243, 0.5);
-
    }
-   .cards >h3{
+   /* .cards >h3{
     padding-top: 2ch ;
-     color: rgb(7, 58, 58);
+      
      font-family: 'Times New Roman', Times, serif;
      font-size: 200%;
 
-   }
-   .cards >h4{
+   } */
+   /* .cards >h4{
 
-    color:  rgba(10, 71, 71, 0.966);
+     
      
     font-family: 'Times New Roman', Times, serif;
      
     font-size: 160%;
   }
   .cards >h6{
-    color:  rgb(8, 12, 12);
+    
     font-family: 'Times New Roman', Times, serif;
      
     font-size: 150%;
     font-weight: bold;
-  }
-  .Edit{
+  } */
+  /* .Edit{
     
      padding: 1ch;
     background: rgb(6, 133, 105);
     margin: 1ch;
     border-radius: 8px;
-    /* border: rgb(153, 163, 62) solid; */
-    color: rgb(3, 23, 24);
+     
     font-family: 'Times New Roman', Times, serif;
     font-size: 100%;
     font-weight: bolder;
     cursor: pointer;
-  }
-  .ADDbtn{
+  } */
+
+  /* .ADDbtn{
     padding: 1ch;
     background: rgb(5, 92, 80);
     margin: 1ch;
@@ -348,17 +316,6 @@
     font-family: 'Times New Roman', Times, serif;
     font-size: 100%;
     cursor: pointer;
-  }
-  .Delete{
-    padding: 1ch;
-    background: rgb(209, 72, 54);
-    margin: 1ch;
-    border-radius: 8px;
-    /* border: rgb(235, 89, 31)solid; */
-    color: rgb(9, 32, 32);
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 100%;
-    cursor: pointer;
-    font-weight: bolder;
-  }
+  } */
+   
 }
